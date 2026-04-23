@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Structure definition
+
 struct Employee {
     char name[50];
     char designation[50];
@@ -10,12 +10,11 @@ struct Employee {
     float salary;
 };
 
-// Function to count total employees
 void totalEmployees(int n) {
     printf("\nTotal Employees = %d\n", n);
 }
 
-// Function to count male and female employees
+
 void countGender(struct Employee e[], int n) {
     int male = 0, female = 0;
 
@@ -30,7 +29,7 @@ void countGender(struct Employee e[], int n) {
     printf("Female Employees = %d\n", female);
 }
 
-// Function to display employees with salary > 10000
+
 void highSalary(struct Employee e[], int n) {
     printf("\nEmployees with salary > 10000:\n");
     for(int i = 0; i < n; i++) {
@@ -40,7 +39,7 @@ void highSalary(struct Employee e[], int n) {
     }
 }
 
-// Function to display employees with designation "Asst Manager"
+
 void asstManager(struct Employee e[], int n) {
     printf("\nEmployees with designation 'Asst Manager':\n");
     for(int i = 0; i < n; i++) {
@@ -57,7 +56,7 @@ int main() {
     printf("Enter number of employees: ");
     scanf("%d", &n);
 
-    // Input details
+    
     for(int i = 0; i < n; i++) {
         printf("\nEnter details of employee %d\n", i + 1);
 
@@ -77,7 +76,7 @@ int main() {
         scanf("%f", &e[i].salary);
     }
 
-    // Function calls
+    
     totalEmployees(n);
     countGender(e, n);
     highSalary(e, n);
