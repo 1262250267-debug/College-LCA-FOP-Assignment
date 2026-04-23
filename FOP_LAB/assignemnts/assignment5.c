@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to add two matrices
 void add(int a[10][10], int b[10][10], int r, int c) {
     int sum[10][10];
     printf("\nAddition of matrices:\n");
@@ -13,7 +12,7 @@ void add(int a[10][10], int b[10][10], int r, int c) {
     }
 }
 
-// Function to find saddle point
+
 void saddle(int a[10][10], int r, int c) {
     int found = 0;
     for(int i=0;i<r;i++) {
@@ -27,7 +26,7 @@ void saddle(int a[10][10], int r, int c) {
             }
         }
 
-        // Check if it is maximum in column
+        
         int k;
         for(k=0;k<r;k++) {
             if(a[k][col] > min)
@@ -43,7 +42,7 @@ void saddle(int a[10][10], int r, int c) {
         printf("\nNo saddle point\n");
 }
 
-// Function to find inverse of 2x2 matrix
+
 void inverse(int a[2][2]) {
     int det = a[0][0]*a[1][1] - a[0][1]*a[1][0];
 
@@ -57,7 +56,7 @@ void inverse(int a[2][2]) {
     printf("%f %f\n", -a[1][0]/(float)det, a[0][0]/(float)det);
 }
 
-// Function to check magic square
+
 void magic(int a[10][10], int n) {
     int sum = 0, temp;
 
@@ -112,7 +111,7 @@ int main() {
     else
         printf("\nInverse only for 2x2 matrix\n");
 
-    // Magic square check
+    
     printf("\nEnter size for magic square check: ");
     scanf("%d", &n);
 
