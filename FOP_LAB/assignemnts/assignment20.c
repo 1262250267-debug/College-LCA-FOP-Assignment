@@ -1,4 +1,4 @@
-//calll by value and call by reference
+
 #include<stdio.h>
 int swapbyvalue(int num1, int num2);
 int swapbref(int *num1, int *num2);
