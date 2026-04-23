@@ -50,7 +50,7 @@ int main() {
 
             case 5:
                 strcpy(temp, str1);
-                strrev(temp);  // Note: Works in some compilers (like Turbo C)
+                strrev(temp);  
                 printf("Reversed string = %s\n", temp);
                 break;
 
