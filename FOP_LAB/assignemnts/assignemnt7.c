@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Structure definition
+
 struct Student {
     int roll;
     char name[50];
@@ -15,7 +15,7 @@ int main() {
     printf("Enter number of students: ");
     scanf("%d", &n);
 
-    // Input details
+    
     for(int i = 0; i < n; i++) {
         printf("\nEnter details of student %d\n", i + 1);
 
@@ -28,12 +28,12 @@ int main() {
         printf("Marks in 3 subjects: ");
         scanf("%f %f %f", &s[i].marks1, &s[i].marks2, &s[i].marks3);
 
-        // Calculate total and percentage
+        
         s[i].total = s[i].marks1 + s[i].marks2 + s[i].marks3;
         s[i].percentage = s[i].total / 3;
     }
 
-    // Display results
+    
     printf("\n--- Student Results ---\n");
     for(int i = 0; i < n; i++) {
         printf("\nRoll No: %d", s[i].roll);
